@@ -1,0 +1,33 @@
+body,
+html {
+  text-align: center;
+}
+#app {
+  width: 480px;
+  margin: 0 auto;
+}
+#bottom {
+  width: 500px;
+  margin: 15px auto;
+  cursor: pointer;
+}
+#confirmButton {
+  width: 470px;
+  height: 37px;
+  border: 1px solid lightblue;
+  background: #fff;
+  color: blue;
+}
+.line {
+  overflow: hidden;
+}
+.seat {
+  margin: 2px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+.seat:hover {
+  opacity: 0.5;
+}

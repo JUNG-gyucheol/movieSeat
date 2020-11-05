@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<style>
+  /* 통로 */
+  .hallway{
+    background: white;
+  }
+
+  /* 선택가능 좌석 */
+  .enable {
+    background:lightgreen;
+    cursor: pointer;
+  }
+
+  /* 선택한 좌석 */
+  .disable{
+    background:orangered; 
+    cursor: pointer;
+  }
+  
+  /* 선택불가 좌석 */
+  .soldout{
+    background:lightgray;
+    opacity: .5;
+  }
+  
+ </style>
+<body onload="onLoad()">
+  <!-- 타이틀 -->
+  <h1>좌석예메 시스템</h1>
+
+  <!-- app -->
+  <div id="app"></div>  
+
+  <!-- 예약완료 버튼 -->
+  <div id="bottom">
+    <button id="confirmButton" onClick="handleSoldout()">예약완료</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
